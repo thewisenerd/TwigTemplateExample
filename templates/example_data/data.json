@@ -1,0 +1,19 @@
+{
+  "name": "johndoe",
+  "age": 18,
+  "likes": [
+    "food",
+    "sleep"
+  ],
+  "bored": true,
+  "news": {
+    "object1": {
+      "heading": "heading1",
+      "content": "content1"
+    },
+    "object2": {
+      "heading": "heading2",
+      "content": "content2"
+    }
+  }
+}

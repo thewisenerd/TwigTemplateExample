@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<head>
+  <title>{{name}}'s page</title>
+</head>
+<body>
+  <h1>hello {{name}}!</h1>
+  <br>
+
+  am i seriously {{age}}? i know!
+  <!-- ikr... nvm. -->
+  i look like i'm {{ age - 5 }}? don't be ridiculous.
+
+  <br>
+  i like:
+  <br>
+  <ul>
+  {% for like in likes %}
+
+    <li>{{like}}</li>
+
+  {% endfor %}
+  </ul>
+
+  {% if bored == "true" %}
+
+    i'm bored.
+    here's some news.
+    <br>
+
+    {% for obj in news %}
+      <h3>{{obj.heading}}</h3>
+      <p>{{obj.content}}</p>
+    {% endfor %}
+
+  {% else %}
+
+  i'm not bored.
+
+  {% endif %}
+
+</body>
+</html>
